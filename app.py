@@ -28,8 +28,8 @@ def talk_to_us():
 # MAIL CONFIG
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'metachainrecovery468@gmail.com'
-app.config['MAIL_PASSWORD'] = 'bgcj pmze kjjv ytrv'  # no spaces
+app.config['MAIL_USERNAME'] = 'Metachainsrecovery@gmail.com'
+app.config['MAIL_PASSWORD'] = 'jtov bojk gjqn oizv'  # no spaces
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_DEFAULT_SENDER'] = app.config['MAIL_USERNAME']
@@ -69,3 +69,4 @@ def success():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
