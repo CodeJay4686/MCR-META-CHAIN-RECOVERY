@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message Sent | MCR META CHAIN RECOVERY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='talk_to_us.css') }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(80% 120% at 90% 30%, #0e2a47 0%,  #050b17 55%, #020814 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .success-container {
+      background: #ffffff;
+      padding: 40px 60px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .success-container h1 {
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+    .success-container p {
+      color: #333;
+      font-size: 18px;
+    }
+    .success-container a {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #007bff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .success-container a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <h1>✅ Message Sent!</h1>
+    <p>We have received your message. We will get back to you as soon as possible.</p>
+    <a href="{{ url_for('talk_to_us') }}">Back to Contact Page</a>
+  </div>
+</body>
+</html>

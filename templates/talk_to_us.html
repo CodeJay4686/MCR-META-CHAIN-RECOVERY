@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Talk To Us | MCR META CHAIN RECOVERY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+  <style>
+    /* =========================
+   GLOBAL STYLING
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* NAVBAR BASE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background:   radial-gradient(80% 120% at 90% 30%, #0e2a47 0%,  #050b17 55%, #020814 100%);
+  color: #fff;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.nav-links a:hover {
+    color: #7cf03d;
+}
+.cta-btn {
+  padding: 12px 22px;
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: rgba(168, 179, 252, 0.523);
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #111;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-left p {
+    display: none; /* hide tagline on mobile */
+  }
+}
+.narration {
+    max-width: 900px;       /* Keeps text readable on large screens */
+    margin: 50px auto;       /* Centered with spacing from nav */
+    padding: 20px 25px;      /* Comfortable padding */
+    background-color: #f7f9fc;  /* Light, subtle background */
+    border-radius: 12px;     /* Rounded corners for modern look */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);  /* Soft shadow for depth */
+}
+
+.narration h4 {
+    font-size: 18px;         /* Readable paragraph size */
+    line-height: 1.7;        /* Spacing for easy reading */
+    color: #222;             /* Dark text for contrast */
+    font-weight: 400;        /* Normal weight, not too heavy */
+    text-align: justify;      /* Justified text for professional look */
+}
+
+@media screen and (max-width: 768px) {
+    .narration {
+        margin: 30px 15px;   /* Smaller margin for mobile */
+        padding: 15px 20px;  /* Slightly reduced padding */
+    }
+
+    .narration h4 {
+        font-size: 16px;     /* Adjust font size for smaller screens */
+    }
+}
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+    padding-top: 150px; /* to offset fixed navbar */
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact-section {
+    max-width: 900px;
+    margin: 60px auto;
+    background: linear-gradient(135deg, #f0f4ff, #ffffff);
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Section Title */
+.contact-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0a0a23;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0a0a99;
+    box-shadow: 0 0 8px rgba(10,10,153,0.2);
+    outline: none;
+}
+
+/* Submit Button */
+.contact-form button {
+    background: #0a0a23;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background: #14144a;
+    transform: translateY(-2px);
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 35px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info div {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #0a0a99;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+  .get_in_touch {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .githeader h4 {
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .gitsubheader h3 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 30px;
+  }
+
+  .contact-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #fff;
+    background: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #0a0a23;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    main {
+        padding-top: 200px;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 28px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+    }
+    .narration{
+        margin-top: -60px;
+    }
+}
+
+  </style>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <h3>MCR META CHAIN RECOVERY</h3>
+    <p>Trace And Recover Your Stolen Cryptocurrency with legitimate crypto experts.</p>
+  </div>
+
+  <!-- HAMBURGER ICON -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+ <ul class="nav-links" id="navLinks">
+  <li><a href="/">Home</a></li>
+  <li><a href="/services">Services</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/talk-to-us">Contact</a></li>
+  <li><a href="/talk_to_us" class="cta-btn">Talk to us →</a></li>
+</ul>
+</nav>
+<main>
+    <div class="narration">
+        <h4>MCR META CHAIN RECOVERY (MCR) is a reliable digital asset recovery platform dedicated to helping users regain lost or inaccessible cryptocurrency. Whether you’ve fallen victim to fraud, lost access to your wallet, or encountered a failed transaction, our skilled team employs advanced blockchain tracing and recovery methods to recover your funds. We provide fast, secure, and confidential case assessments. At MCR, protecting your privacy and ensuring your peace of mind are our top priorities. Submit your case today and let our experienced recovery specialists guide you through a safe, efficient, and effective crypto recovery journey.</h4>
+    </div>
+  <section class="contact-section">
+    <h1>Talk To Us</h1>
+    <p>Have a question or need help with your case? Reach out to us below and we’ll respond ASAP.</p>
+
+    <form class="contact-form" action="/submit-contact" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <div>Email: <a href="mailto:swiftrescuesupports@acr-chain.space">support@metachainrecovery.com</a></div>
+      <div>Phone: <a href="tel:+15027061909">+1 502 706 1909</a></div>
+      <div>Or message us on WhatsApp / Support</div>
+    </div>
+  </section>
+<section class="get_in_touch">
+  <div class="githeader">
+    <h4>GET IN TOUCH</h4>
+  </div>
+  <div class="gitsubheader">
+    <h3>Schedule a consultation!</h3>
+  </div>
+  <button class="contact-btn" onclick="window.location.href='https://example.com'">
+    Contact us
+  </button>
+</section>
+</main>
+
+<footer>
+  &copy; 2025 MCR META CHAIN RECOVERY. All rights reserved.
+</footer>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
