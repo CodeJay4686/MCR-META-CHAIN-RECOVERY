@@ -24,7 +24,12 @@ def about():
 def talk_to_us():
     return render_template('talk_to_us.html')
 
-
+@app.route('/blog/<int:num>')
+def blog(num):
+    try:
+        return render_template(f'blog{num}.html')
+    except:
+        return "Blog not found", 404
 
 # MAIL CONFIG
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
@@ -70,6 +75,7 @@ def success():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
