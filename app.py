@@ -1,8 +1,12 @@
-from flask import Flask, request, redirect, url_for, render_template
-from flask_mail import Mail, Message
 import os
+from flask import Flask, render_template, request, redirect, url_for
+from flask_mail import Mail, Message
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder=os.path.join(os.getcwd(), "templates"),
+    static_folder=os.path.join(os.getcwd(), "static")
+)
 
 # =========================
 # ROUTES (PAGES)
@@ -75,6 +79,7 @@ def success():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
