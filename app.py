@@ -24,6 +24,36 @@ def about():
 def talk_to_us():
     return render_template('talk_to_us.html')
 
+@app.route('/blog1')
+def blog1():
+    return render_template('blog1.html')
+
+@app.route('/blog2')
+def blog2():
+    return render_template('blog2.html')
+
+
+@app.route('/blog3')
+def blog1():
+    return render_template('blog3.html')
+
+@app.route('/blog4')
+def blog2():
+    return render_template('blog4.html')
+
+
+@app.route('/blog5')
+def blog1():
+    return render_template('blog5.html')
+
+@app.route('/blog6')
+def blog2():
+    return render_template('blog6.html')
+
+
+@app.route('/blog7')
+def blog1():
+    return render_template('blog7.html')
 
 # MAIL CONFIG
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
@@ -69,4 +99,5 @@ def success():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
